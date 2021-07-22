@@ -1,0 +1,13 @@
+<%- include('./partials/head') %>
+    <div class="gallery">
+        <% data.forEach(pic=> {%>
+            <figure>
+                <img src=<%=pic.url %> alt=<%= pic.description %>
+                    >
+                    <figcaption>
+                        <%= pic.description %>
+                    </figcaption>
+            </figure>
+            <%})%>
+    </div>
+    <%- include('./partials/foot') %>
